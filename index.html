@@ -1,20 +1,24 @@
-html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adriko Denis Sunday</title>
-    <style>
-        table { border-collapse: collapse; }
-        table, th, td { border: 1px solid black; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Sunday Denis Adriko</h1>
         <p>I am a student of Muni University pursuing IT</p>
-        <h2><a href="#about-me">About Me</a></h2>
+        <nav>
+            <ul>
+               <li><a href="#About-me">About me</a></li> 
+               <li><a href="#Myfavoritemodules">My favorite modules</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    <h2><a href="#About-me">About Me</a></h2>
         <p>I love computing and coding</p>
         <img src="Computer1.jpg" alt="Computer" width="300" height="200">
         <br>
@@ -23,13 +27,20 @@ html
         <a href="https://github.com/Adsun93/itm1131-portfolio" target="_blank">My GitHub Portfolio</a>
     </header>
 
-    <section id="about-me">
+    <section id="About-me" class="card">
         <h2>About Me</h2>
+        <p>I am a student of Muni University pursuing IT. I love computing and coding. I am passionate about learning new technologies and building innovative solutions.</p>
+        </section>
+        <section id="Myfavoritemodules">
+        <h3>My favorite course modules</h3>
         <table>
+            <thead>           
             <tr>
                 <th>My favorite course modules</th>
                 <th>Why</th>
-            </tr>
+                </tr>
+                </thead>
+                <tbody>
             <tr>
                 <td>Web Application Development</td>
                 <td>I love to design and build web applications</td>
@@ -42,8 +53,19 @@ html
                 <td>Computer repair and assembly</td>
                 <td>I want to learn how to repair computers</td>
             </tr>
+            </tbody>
         </table>
     </section>
+    <section id="contact">
+        <h2>contact me</h2>
+        <form>
+            <input type="text" placeholder="fullname" name="fullname"><br><br>
+            <input type="text" placeholder="email" name="email"><br><br>
+            <input type="text" placeholder="message" name="message"><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+
 
     <footer>
         <p>&copy; 2026 Sunday Denis Adriko. All rights reserved.</p>
